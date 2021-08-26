@@ -1,8 +1,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/device.mk \
-    $(LOCAL_DIR)/omni_doha.mk
+    $(LOCAL_DIR)/lineage_doha.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_doha-user \
-    omni_doha-userdebug \
-    omni_doha-eng \
+    lineage_doha-user \
+    lineage_doha-userdebug \
+    lineage_doha-eng \
