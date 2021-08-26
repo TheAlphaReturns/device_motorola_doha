@@ -25,9 +25,9 @@ INITIAL_COPYRIGHT_YEAR=2020
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-OMNI_ROOT="$MY_DIR"/../../..
+RR_ROOT="$MY_DIR"/../../..
 
-HELPER="$OMNI_ROOT"/vendor/omni/build/tools/extract_utils.sh
+HELPER="$RR_ROOT"/vendor/rr/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -35,7 +35,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$OMNI_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$RR_ROOT"
 
 # Copyright headers and guards
 write_headers

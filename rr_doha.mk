@@ -21,7 +21,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-VENDOR_EXCEPTION_PATHS := omni \
+VENDOR_EXCEPTION_PATHS := rr \
     motorola \
     gapps \
     microg
@@ -31,22 +31,22 @@ VENDOR_EXCEPTION_PATHS := omni \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/rr/config/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
-# must be before including omni part
+# must be before including rr part
 TARGET_BOOTANIMATION_SIZE := 1080p
 AB_OTA_UPDATER := true
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/doha/overlay/device
-DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/rr/config/common.mk)
 
 # get the rest of aosp stuff after ours
 # $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
@@ -55,7 +55,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/motorola/doha/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_doha
+PRODUCT_NAME := rr_doha
 PRODUCT_DEVICE := doha
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
@@ -66,8 +66,8 @@ PRODUCT_SYSTEM_NAME := Moto G8 Plus
 
 VENDOR_RELEASE := 9/PPIS29.65-24-2/dc7f7b:user/release-keys
 BUILD_FINGERPRINT := motorola/doha_retail/doha:$(VENDOR_RELEASE)
-OMNI_BUILD_FINGERPRINT := motorola/doha_retail/doha:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'doha_retail-user 10 PPIS29.65-24-2 dc7f7b release-keys'"
+RR_BUILD_FINGERPRINT := motorola/doha_retail/doha:$(VENDOR_RELEASE)
+RR_PRIVATE_BUILD_DESC := "'doha_retail-user 10 PPIS29.65-24-2 dc7f7b release-keys'"
 
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-11-01
 
