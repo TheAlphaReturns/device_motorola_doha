@@ -11,6 +11,9 @@ LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_USE_AAPT2 := true
 
+# Specify API Level of Android 10
+LOCAL_SDK_VERSION := 29
+
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
     android-support-v13 \
