@@ -30,9 +30,6 @@ VENDOR_EXCEPTION_PATHS := rr \
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/rr/config/gsm.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
@@ -43,7 +40,6 @@ TARGET_BOOTANIMATION_SIZE := 1080p
 AB_OTA_UPDATER := true
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/doha/overlay/device
-DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/rr/config/common.mk)
@@ -74,14 +70,4 @@ PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-11-01
 TARGET_VENDOR := motorola
 
 $(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
-
-ifeq ($(WITH_GAPPS),true)
-# https://gitlab.com/darkobas/android_vendor_gapps
-$(call inherit-product, vendor/gapps/config.mk)
-endif
-
-ifeq ($(WITH_MICROG),true)
-# https://github.com/boulzordev/android_prebuilts_prebuiltapks
-$(call inherit-product, vendor/microg/microg.mk)
-endif
 
