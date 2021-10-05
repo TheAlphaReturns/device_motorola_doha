@@ -58,24 +58,14 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/motorola/trinket
-TARGET_KERNEL_CONFIG := vendor/aosp_doha_defconfig
+TARGET_KERNEL_CONFIG := vendor/rr_doha_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
-<<<<<<< HEAD
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/dtc/dtc
-=======
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    DTC_EXT=$(shell pwd)/device/motorola/doha/dtc/dtc
+	DTC_EXT=$(shell pwd)/device/motorola/doha/dtc/dtc
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 338ac8d... Fix path of DTC
-=======
->>>>>>> 338ac8d... Fix path of DTC
-=======
->>>>>>> 338ac8d... Fix path of DTC
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r328903
+TARGET_KERNEL_CLANG_VERSION := r353983c
 NEED_KERNEL_MODULE_VENDOR_OVERLAY := true
 
 BOARD_ROOT_EXTRA_FOLDERS := odm
@@ -120,7 +110,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 
-include vendor/aosp/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
@@ -156,4 +146,3 @@ BUILD_BROKEN_PHONY_TARGETS := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_FLATTEN_APEX := true
 USE_XML_AUDIO_POLICY_CONF := 1
-
