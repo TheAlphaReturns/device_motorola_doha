@@ -60,7 +60,13 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/motorola/trinket
 TARGET_KERNEL_CONFIG := vendor/aosp_doha_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
+<<<<<<< HEAD
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/dtc/dtc
+=======
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    DTC_EXT=$(shell pwd)/device/motorola/doha/dtc/dtc
+
+>>>>>>> 338ac8d... Fix path of DTC
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r328903
