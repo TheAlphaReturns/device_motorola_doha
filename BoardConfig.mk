@@ -66,6 +66,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/dtc/dtc
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/device/motorola/doha/dtc/dtc
 
+<<<<<<< HEAD
+>>>>>>> 338ac8d... Fix path of DTC
+=======
 >>>>>>> 338ac8d... Fix path of DTC
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_CLANG_COMPILE := true
