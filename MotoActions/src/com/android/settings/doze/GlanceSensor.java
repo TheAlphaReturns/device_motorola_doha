@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.doze;
+package com.android.settings.doze;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
 
-import org.lineageos.settings.device.MotoActionsSettings;
-import org.lineageos.settings.device.SensorAction;
-import org.lineageos.settings.device.SensorHelper;
+import com.android.settings.MotoActionsSettings;
+import com.android.settings.SensorAction;
+import com.android.settings.SensorHelper;
 
 public class GlanceSensor implements ScreenStateNotifier {
     private static final String TAG = "MotoActions-GlanceSensor";

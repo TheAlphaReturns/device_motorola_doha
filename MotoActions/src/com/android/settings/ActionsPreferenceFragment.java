@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -26,7 +26,7 @@ import androidx.preference.SwitchPreference;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import org.lineageos.settings.device.actions.CameraActivationSensor;
+import com.android.settings.actions.CameraActivationSensor;
 
 import java.io.File;
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -23,9 +23,9 @@ import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
 
-import org.lineageos.settings.device.actions.UpdatedStateNotifier;
-import org.lineageos.settings.device.actions.CameraActivationAction;
-import org.lineageos.settings.device.actions.TorchAction;
+import com.android.settings.actions.UpdatedStateNotifier;
+import com.android.settings.actions.CameraActivationAction;
+import com.android.settings.actions.TorchAction;
 
 public class MotoActionsSettings {
     private static final String TAG = "MotoActions";

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.doze;
+package com.android.settings.doze;
 
 import java.util.List;
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.actions;
+package com.android.settings.actions;
 
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
@@ -27,8 +27,8 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
 
-import org.lineageos.settings.device.MotoActionsSettings;
-import org.lineageos.settings.device.SensorHelper;
+import com.android.settings.MotoActionsSettings;
+import com.android.settings.SensorHelper;
 
 public class FlipToMute implements UpdatedStateNotifier {
     private static final String TAG = "MotoActions-FlipToMute";

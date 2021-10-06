@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings;
 
 import java.util.List;
 import java.io.FileOutputStream;

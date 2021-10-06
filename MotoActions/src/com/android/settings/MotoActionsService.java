@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings;
 
 import android.app.IntentService;
 import android.content.Context;
@@ -27,20 +27,20 @@ import android.util.Log;
 import java.util.List;
 import java.util.LinkedList;
 
-import org.lineageos.settings.device.actions.UpdatedStateNotifier;
-import org.lineageos.settings.device.actions.CameraActivationSensor;
-import org.lineageos.settings.device.actions.ChopChopSensor;
-import org.lineageos.settings.device.actions.FlipToMute;
-import org.lineageos.settings.device.actions.LiftToSilence;
-import org.lineageos.settings.device.actions.ProximitySilencer;
+import com.android.settings.actions.UpdatedStateNotifier;
+import com.android.settings.actions.CameraActivationSensor;
+import com.android.settings.actions.ChopChopSensor;
+import com.android.settings.actions.FlipToMute;
+import com.android.settings.actions.LiftToSilence;
+import com.android.settings.actions.ProximitySilencer;
 
-import org.lineageos.settings.device.doze.DozePulseAction;
-import org.lineageos.settings.device.doze.GlanceSensor;
-import org.lineageos.settings.device.doze.ProximitySensor;
-import org.lineageos.settings.device.doze.FlatUpSensor;
-import org.lineageos.settings.device.doze.ScreenReceiver;
-import org.lineageos.settings.device.doze.ScreenStateNotifier;
-import org.lineageos.settings.device.doze.StowSensor;
+import com.android.settings.doze.DozePulseAction;
+import com.android.settings.doze.GlanceSensor;
+import com.android.settings.doze.ProximitySensor;
+import com.android.settings.doze.FlatUpSensor;
+import com.android.settings.doze.ScreenReceiver;
+import com.android.settings.doze.ScreenStateNotifier;
+import com.android.settings.doze.StowSensor;
 
 public class MotoActionsService extends IntentService implements ScreenStateNotifier,
         UpdatedStateNotifier {

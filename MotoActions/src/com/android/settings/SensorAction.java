@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.actions;
+package com.android.settings;
 
-public interface UpdatedStateNotifier {
-    public void updateState();
+public interface SensorAction {
+    public void action();
 }
