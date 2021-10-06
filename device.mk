@@ -125,8 +125,8 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     libandroid_net
 
-PRODUCT_PACKAGES += \
-    MotoActions
+# PRODUCT_PACKAGES += \
+#    MotoActions
 
 PRODUCT_PACKAGES += \
     vndk_package
