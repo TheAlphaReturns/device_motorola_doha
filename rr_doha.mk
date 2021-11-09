@@ -62,6 +62,9 @@ PRODUCT_SYSTEM_NAME := Moto G8 Plus
 
 VENDOR_RELEASE := 10/QPIS30.28-Q3-28-26-4-1-7/f0f757:user/release-keys
 BUILD_FINGERPRINT := motorola/doha_retail/doha:$(VENDOR_RELEASE)
+PRIVATE_BUILD_DESC := "'doha_retail-user 10 QPIS30.28-Q3-28-26-4-1-7 f0f757 release-keys'"
+
+
 RR_BUILD_FINGERPRINT := motorola/doha_retail/doha:$(VENDOR_RELEASE)
 RR_PRIVATE_BUILD_DESC := "'doha_retail-user 10 QPIS30.28-Q3-28-26-4-1-7 f0f757 release-keys'"
 
